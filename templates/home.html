@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pharma Sales Prediction Demo</title>
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            background-color: #f7f7f7;
+            margin: 50px;
+            padding: 20px;
+            text-align: center;
+        }
+
+        .login {
+            max-width: 500px;
+            margin: 0 auto;
+            background-color: #ffffff;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+
+        h1 {
+            color: #333333;
+            background-color: #0cc7c1; /* Add a green background color */
+            padding: 10px; /* Add padding for better visibility */
+            border-radius: 5px; /* Add rounded corners */
+        }
+
+        form {
+            margin-top: 20px;
+        }
+
+        .mb-3 {
+            margin-bottom: 20px;
+        }
+
+        label {
+            display: block;
+            margin-bottom: 5px;
+            color: #333333;
+            font-weight: bold;
+        }
+
+        .form-control {
+            width: 100%;
+            padding: 10px;
+            font-size: 16px;
+            border: 1px solid #cccccc;
+            border-radius: 5px;
+            box-sizing: border-box;
+        }
+
+        select.form-control {
+            appearance: none;
+        }
+
+        input[type="submit"] {
+            background-color: #4caf50;
+            color: #ffffff;
+            cursor: pointer;
+            font-size: 16px;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 5px;
+        }
+
+        h2 {
+            margin-top: 20px;
+            color: #4caf50;
+        }
+    </style>
+</head>
+<body>
+    <div class="login">
+        <!-- <h3>Demo_by_Sandeep</h3> -->
+
+        <form action="{{ url_for('predict_datapoint')}}" method="post">
+            <h1>Pharma Sales Prediction</h1>
+
+            <div class="mb-3">
+                <label for="gender">Gender</label>
+                <select class="form-control" name="gender" id="gender" required>
+                    <option value="" disabled selected>Select the Gender</option>
+                    <option value="male">Male</option>
+                    <option value="female">Female</option>
+                </select>
+            </div>
+
+            <div class="mb-3">
+                <label for="region">Region</label>
+                <select class="form-control" name="region" id="region" required>
+                    <option value="" disabled selected>Select the Region</option>
+                    <option value="group A">Group A</option>
+                    <option value="group B">Group B</option>
+                    <option value="group C">Group C</option>
+                    <option value="group D">Group D</option>
+                    <option value="group E">Group E</option>
+                </select>
+            </div>
+
+            <div class="mb-3">
+                <label for="education_level">Education Level</label>
+                <select class="form-control" name="education_level" id="education_level" required>
+                    <option value="" disabled selected>Select Education Level</option>
+                    <option value="associate's degree">Associate's Degree</option>
+                    <option value="bachelor's degree">Bachelor's Degree</option>
+                    <option value="high school">High School</option>
+                    <option value="master's degree">Master's Degree</option>
+                    <option value="some college">Some College</option>
+                    <option value="some high school">Some High School</option>
+                </select>
+            </div>
+
+            <div class="mb-3">
+                <label for="income">Income</label>
+                <select class="form-control" name="income" id="income" required>
+                    <option value="" disabled selected>Select Income Type</option>
+                    <option value="below standard">Below Standard</option>
+                    <option value="standard">Standard</option>
+                </select>
+            </div>
+
+            <div class="mb-3">
+                <label for="early_health_issue">Early Health Issue</label>
+                <select class="form-control" name="early_health_issue" id="early_health_issue" required>
+                    <option value="" disabled selected>Select Early Health Issue</option>
+                    <option value="no">No</option>
+                    <option value="yes">Yes</option>
+                </select>
+            </div>
+
+            <div class="mb-3">
+                <label for="amount">Amount (k)</label>
+                <input class="form-control" type="number" name="amount" id="amount" placeholder="Enter total amount spend" min="0" max="100" />
+            </div>
+
+            <div class="mb-3">
+                <label for="person">Person</label>
+                <input class="form-control" type="number" name="person" id="person" placeholder="Person taken the medicine" min="0" max="100" />
+            </div>
+
+            <div class="mb-3">
+                <input class="btn btn-primary" type="submit" value="Predict the Total Sales" required />
+            </div>
+        </form>
+
+        <h2>The predicted sales would be ${{results}}k</h2>
+
+        <div class="attribution">
+            <span>Merry X-mas <span class="icon">🎄🎅</span> from <a href="https://sandeepiitism.netlify.com/" target="_blank">Sandeep</a></span>
+        </div>
+    </div>
+</body>
+</html>
+
