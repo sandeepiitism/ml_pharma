@@ -15,11 +15,13 @@
 📈 Model Evaluation Metrics: The model's performance is assessed using key metrics such as accuracy, precision, recall, and F1 score.
 
 `Features`
-📊 Data_ingestion: data ingestion pipeline from db or in .csv from local system.
-🤖 Data_transformation: feature scaling and creating transformation pipeline like onehot encoding and imputers.
-📉 model_trainer.py: Train models and validate their performance using cross-validation techniques.
-🚀 Flask Web App: Deploy the model as a Flask web application for easy interaction.
-📝 Documentation: Detailed documentation to guide users and developers through the codebase.
+📊 Data_ingestion: data ingestion pipeline from db or in .csv from local system.<br>
+🤖 Data_transformation: feature scaling and creating transformation pipeline like onehot encoding and imputers.<br>
+📉 model_trainer.py: Train models and validate their performance using cross-validation techniques.<br>
+🚀 Flask Web App: Deploy the model as a Flask web application for easy interaction.<br>
+📝 Documentation: Detailed documentation to guide users and developers through the codebase.<br>
+
+![Pharmacy Model](C:\F Drive\personal\Machine Learning\ml_pharma\pharma.png)
 
 `Getting Started`
 
