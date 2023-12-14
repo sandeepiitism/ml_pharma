@@ -21,7 +21,7 @@
 🚀 Flask Web App: Deploy the model as a Flask web application for easy interaction.<br>
 📝 Documentation: Detailed documentation to guide users and developers through the codebase.<br>
 
-![Pharmacy Model](C:\F Drive\personal\Machine Learning\ml_pharma\pharma.png)
+![Alt text](pharma.png)
 
 `Getting Started`
 
