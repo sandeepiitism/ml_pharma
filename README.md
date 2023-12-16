@@ -20,8 +20,9 @@
 📉 model_trainer.py: Train models and validate their performance using cross-validation techniques.<br>
 🚀 Flask Web App: Deploy the model as a Flask web application for easy interaction.<br>
 📝 Documentation: Detailed documentation to guide users and developers through the codebase.<br>
+🤖 Github Action: The app has been tested and deployed in Azure cloud using Github Action.<br>
 
-![Alt text](pharma.png)
+![Alt text](sales.png)
 
 `Getting Started`
 
@@ -45,3 +46,5 @@ dill, etc as mentioned.
 📄 This project is licensed under the MIT License.
 
 👩‍💻 Start exploring the code, make improvements, and witness the power of Flask in deploying machine learning models. Happy coding! 🚀
+
+`Author`: Sandeep Chowdhury

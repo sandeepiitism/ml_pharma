@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Pharma Sales Prediction Demo</title>
+    <title>Sales Prediction Demo</title>
     <style>
         body {
             font-family: 'Arial', sans-serif;
@@ -78,7 +78,7 @@
         <!-- <h3>Demo_by_Sandeep</h3> -->
 
         <form action="{{ url_for('predict_datapoint')}}" method="post">
-            <h1>Pharma Sales Prediction</h1>
+            <h1>Sales Prediction App</h1>
 
             <div class="mb-3">
                 <label for="gender">Gender</label>
@@ -124,7 +124,7 @@
             </div>
 
             <div class="mb-3">
-                <label for="early_health_issue">Early Health Issue</label>
+                <label for="early_health_issue">Purchase Earlier</label>
                 <select class="form-control" name="early_health_issue" id="early_health_issue" required>
                     <option value="" disabled selected>Select Early Health Issue</option>
                     <option value="no">No</option>
@@ -133,12 +133,12 @@
             </div>
 
             <div class="mb-3">
-                <label for="amount">Amount (k)</label>
+                <label for="amount"> Early Purchase Amount (k)</label>
                 <input class="form-control" type="number" name="amount" id="amount" placeholder="Enter total amount spend" min="0" max="100" />
             </div>
 
             <div class="mb-3">
-                <label for="person">Person</label>
+                <label for="person">Quantity Buyed</label>
                 <input class="form-control" type="number" name="person" id="person" placeholder="Person taken the medicine" min="0" max="100" />
             </div>
 
@@ -150,7 +150,7 @@
         <h2>The predicted sales would be ${{results}}k</h2>
 
         <div class="attribution">
-            <span>Merry X-mas <span class="icon">🎄🎅</span> from <a href="https://sandeepiitism.netlify.com/" target="_blank">Sandeep</a></span>
+            <span>Made with <span class="icon">💙</span> by <a href="https://sandeepiitism.netlify.com/" target="_blank">Sandeep</a></span>
         </div>
     </div>
 </body>
