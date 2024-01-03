@@ -37,7 +37,7 @@ dill, etc as mentioned.
 `Installation`
 - Clone the repository.
 - pip install the requirements.
-- Run the app.py file
+- Run the app.py file: http://localhost:5000/predictdata
 
 `Contributing`
 🤝 We welcome contributions! To contribute to this project, please follow our contribution guidelines.
